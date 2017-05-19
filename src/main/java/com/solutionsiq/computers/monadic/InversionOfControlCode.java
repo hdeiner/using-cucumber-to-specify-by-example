@@ -8,7 +8,7 @@ import java.util.List;
 //
 //  We've implemented a Computer interface, and we've chamged the various
 //  monadic functions to use that interface (which says "I've got a mothod
-//  called compute that returns a long when supplied with a long argument").
+//  called computeDoubler that returns a long when supplied with a long argument").
 //
 //  That's worked wonders for our computeAll method mess from BadCode.
 //
