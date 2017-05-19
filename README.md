@@ -2,7 +2,7 @@ Dependency Inversion With Spring Boot
 =====================================
 Guide to this code
 ------------------
-This example will implement a service which computes from value from an argument, as this is the simplest thing that we can implement to demonstrate the concepts we want to talk about.
+This example will implement a service which computes a value from an argument, as this is the simplest thing that we can implement to demonstrate the concepts we want to talk about.
 
 We will code a computing application that implements a computer service that takes a number and doubles it.  We will also implement variations on that interface.  We will implement a version of it which can square the number, cube the number, or take the factorial of the number. 
 
