@@ -6,8 +6,8 @@ import java.util.List;
 //
 //  So, this is a little better than BadCode.
 //
-//  We've implemented a Computer interface, and we've chamged the various
-//  monadic functions to use that interface (which says "I've got a mothod
+//  We've implemented a Computer interface, and we've changed the various
+//  monadic functions to use that interface (which says "I've got a method
 //  called computeDoubler that returns a long when supplied with a long argument").
 //
 //  That's worked wonders for our computeAll method mess from BadCode.
