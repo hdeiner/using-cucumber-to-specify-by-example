@@ -48,4 +48,8 @@ public class TimeOfDayServiceTestStepdefs {
         assertThat(timeOfDayConsumer.getFormattedTimeOfDaySpokenWords(hour, minute, second),is(formattedString));
     }
 
+    @When("^I reach here, I'm done$")
+    public void i_reach_here_I_m_done() throws Throwable {
+        context.close();
+    }
 }

@@ -14,6 +14,7 @@ public class TimeOfDayService implements TimeOfDay {
         if (second >= 30) minute++;
 
         String output = "";
+        if (minute >= 0) output = hours[hour%12];
         if (minute >= 5) output = "almost ten after " + hours[hour%12];
         if (minute >= 10) output = "ten after " + hours[hour%12];
         if (minute >= 15) output = "a quarter after " + hours[hour%12];
