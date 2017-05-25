@@ -1,4 +1,4 @@
-package test.com.solutionsiq.timeofday.springboot;
+package test.com.solutionsiq.timeofday;
 
 import org.junit.runner.RunWith;
 
@@ -12,8 +12,8 @@ import cucumber.api.CucumberOptions;
 //      strict = true,
 //      tags     = "",
         monochrome = false,
-        features = { "src/test/java/test/com/solutionsiq/timeofday/springboot" },
-        glue     = { "test.com.solutionsiq.timeofday.springboot" },
+        features = { "src/test/java/test/com/solutionsiq/timeofday/" },
+        glue     = { "test.com.solutionsiq.timeofday" },
         plugin   = { "pretty", "html:target/cucumber-reports/cucumber-html-report", "json:target/cucumber-reports/cucumber-json-report.json" }
 )
 
