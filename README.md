@@ -339,3 +339,5 @@ Spring comes to life and starts scanning when it establishes it's context with
 The context can be a costly operation.  That's why I made it static within the class.
 
 This code is a litttle bit of a kludge in it.  The  context.close().
+
+And don't forget to look at the pretty cucumber reports located at target/cucumber-pretty-reports/cucumber-html-reports/overview-features.html and target/cucumber-pretty-reports/cucumber-html-reports/overview-steps.html.
