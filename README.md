@@ -1,5 +1,9 @@
 Using Cucumber to Specify By Example
 ====================================
+
+### Status
+[![Build Status](https://travis-ci.org/hdeiner/cucumber-driven-drools.svg?branch=master)](https://travis-ci.org/hdeiner/cucumber-driven-drools)
+
 Guide to this code
 ------------------
 Let's talk how we develop any amount of non-trival code.
