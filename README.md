@@ -18,7 +18,7 @@ But instead of then writing requirements, we write tests.  Those tests become ou
 
 For this example, we will use Cucumber to execute our tests, and use Gherkin to express those tests.
 
-The problem that we are solving is the business person's desire to "say the time, not just display it."  So, if the time is "20:04:45", say it as "almost ten after eight in the evening".  As you can see, there are plenty of "nocks and crannies for things to go wrong".
+The problem that we are solving is the business person's desire to "say the time, not just display it."  So, if the time is "20:04:45", say it as "a little after eight in the evening".  As you can see, there are plenty of "nocks and crannies for things to go wrong".
 
 So, the first thing we do is specify the behaviors of the code in a Cucumber feature file:
 ```Gherkin
@@ -32,19 +32,19 @@ Feature: Time of day formatted as spoken words
     And I should see spoken formatting of "<result>"
 
     Examples:
-      |hour|minute|second|result                                 |
-      |9   |0     |0     |nine in the morning                    |
-      |20  |4     |45    |almost ten after eight in the evening  |
-      |10  |11    |12    |ten after ten in the morning           |
-      |22  |12    |12    |ten after ten in the evening           |
-      |10  |14    |35    |a quarter after ten in the morning     |
-      |5   |21    |18    |twenty after five at night             |
-      |23  |25    |25    |almost half past eleven in the evening |
-      |15  |31    |31    |half past three in the afternoon       |
-      |9   |34    |33    |almost twenty before ten in the morning|
-      |21  |46    |0     |a quarter of ten in the evening        |
-      |11  |51    |10    |ten of twelve in the morning           |
-```
+      |hour|minute|second|result                                   |
+      |9   |3     |0     |a little after nine in the morning       |
+      |20  |4     |45    |a little after eight in the evening      |
+      |10  |11    |12    |about ten after ten in the morning       |
+      |22  |12    |12    |about ten after ten in the evening       |
+      |10  |14    |35    |about a quarter after ten in the morning |
+      |5   |21    |18    |about twenty after five at night         |
+      |23  |25    |25    |almost half past eleven in the evening   |
+      |15  |31    |31    |about half past three in the afternoon   |
+      |9   |34    |33    |almost twenty before ten in the morning  |
+      |21  |46    |0     |about a quarter of ten in the evening    |
+      |11  |51    |10    |about ten of twelve in the morning       |
+````
 Adding in a test runner is next.  We are using Cucumber for Java and JUnit for our code, as below (not shown are the Maven pom.xml dependency management pieces)
 
 ```java
