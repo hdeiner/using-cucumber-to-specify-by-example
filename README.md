@@ -2,7 +2,7 @@ Using Cucumber to Specify By Example
 ====================================
 
 ### Status
-[![Build Status](https://travis-ci.org/hdeiner/using-cucumber-to-specify-by-example.svg?branch=master)](https://travis-ci.org/hdeiner/cucumber-driven-drools)
+[![Build Status](https://travis-ci.org/hdeiner/using-cucumber-to-specify-by-example.svg?branch=master)](https://travis-ci.org/hdeiner/using-cucumber-to-specify-by-example)
 
 Guide to this code
 ------------------
