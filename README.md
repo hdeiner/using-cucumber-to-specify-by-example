@@ -18,7 +18,7 @@ But instead of then writing requirements, we write tests.  Those tests become ou
 
 For this example, we will use Cucumber to execute our tests, and use Gherkin to express those tests.
 
-The problem that we are solving is the business person's desire to "say the time, not just display it."  So, if the time is "20:04:45", say it as "a little after eight in the evening".  As you can see, there are plenty of "nocks and crannies for things to go wrong".
+The problem that we are solving is the business person's desire to "say the time, not just display it."  So, if the time is "20:04:45", say it as "a little after eight in the evening".  As you can see, there are plenty of "nooks and crannies for things to go wrong".
 
 So, the first thing we do is specify the behaviors of the code in a Cucumber feature file:
 ```Gherkin
