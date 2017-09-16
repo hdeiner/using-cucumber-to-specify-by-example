@@ -53,8 +53,7 @@ public class CreditCard {
         if (cardNumber.matches("^(4).*$") && (cardNumber.length() >= 13) && (cardNumber.length() <= 16)) {
             return "Visa";
         }
-        Exception e = new Exception("Credit card digits are not from a known bank");
-        throw e;
+        throw new Exception("Credit card digits are not from a known bank");
     }
 
     public String getCardNumber(){
