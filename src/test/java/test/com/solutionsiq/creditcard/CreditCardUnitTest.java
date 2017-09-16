@@ -12,8 +12,8 @@ import static org.junit.Assert.assertEquals;
 
 @RunWith(Parameterized.class)
 public class CreditCardUnitTest {
-    private String expectedResult;
-    private String actualResult;
+    private final String expectedResult;
+    private final String actualResult;
     private CreditCard creditCard;
 
     public CreditCardUnitTest(String cardNumber, String expectedResult) {

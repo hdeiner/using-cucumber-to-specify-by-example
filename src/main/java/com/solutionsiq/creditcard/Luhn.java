@@ -2,8 +2,8 @@ package com.solutionsiq.creditcard;
 
 public class Luhn {
 
-    private String digits;
-    private int[] reversedCheckDigits;
+    private final String digits;
+    private final int[] reversedCheckDigits;
 
     public Luhn(String digits){
         this.digits = digits;

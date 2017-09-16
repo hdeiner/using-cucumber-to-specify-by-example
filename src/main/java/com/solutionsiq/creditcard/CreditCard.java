@@ -16,7 +16,7 @@ public class CreditCard {
         cardIssuer = cardIssuer(cardNumber);
     }
 
-    public String cardIssuer(String cardNumber) throws Exception {
+    private String cardIssuer(String cardNumber) throws Exception {
         if (cardNumber.matches("^(34|37).*$") && (cardNumber.length() == 15)) {
             return "American Express";
         }
@@ -35,7 +35,7 @@ public class CreditCard {
         if (cardNumber.matches("^(637|638|639).*$") && (cardNumber.length() == 16)) {
             return "InstaPayment";
         }
-        if (cardNumber.matches("^(352|352|354|355|356|357|358).*$") && (cardNumber.length() == 16)) {
+        if (cardNumber.matches("^(352|353|354|355|356|357|358).*$") && (cardNumber.length() == 16)) {
             return "JCB";
         }
         if (cardNumber.matches("^(6304|6706|6771|6709).*") && (cardNumber.length() >= 16) && (cardNumber.length() <= 19)) {
