@@ -8,8 +8,7 @@ public class CreditCard {
         if (!cardNumber.matches("^[0-9]+$")) {
             throw new Exception("Invalid credit card digits");
         }
-        Luhn luhn = new Luhn(cardNumber);
-        if (!luhn.isValid()) {
+        if (!new Luhn(cardNumber).isValid()) {
             throw new Exception("Invalid Luhn validation");
         }
         this.cardNumber = cardNumber;
