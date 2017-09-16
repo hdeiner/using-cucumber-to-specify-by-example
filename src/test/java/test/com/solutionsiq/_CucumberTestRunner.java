@@ -1,9 +1,8 @@
-package test.com.solutionsiq.timeofday;
+package test.com.solutionsiq;
 
-import org.junit.runner.RunWith;
-
-import cucumber.api.junit.Cucumber;
 import cucumber.api.CucumberOptions;
+import cucumber.api.junit.Cucumber;
+import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 
@@ -12,10 +11,10 @@ import cucumber.api.CucumberOptions;
 //      strict = true,
 //      tags     = "",
         monochrome = false,
-        features = { "src/test/java/test/com/solutionsiq/timeofday/" },
-        glue     = { "test.com.solutionsiq.timeofday" },
+        features = { "src/test/java/test/com/solutionsiq/" },
+        glue     = { "test.com.solutionsiq" },
         plugin   = { "pretty", "html:target/cucumber-reports/cucumber-html-report", "json:target/cucumber-reports/cucumber-json-report.json" }
 )
 
-public class TimeOfDayServiceTestRunner {
+public class _CucumberTestRunner {
 }

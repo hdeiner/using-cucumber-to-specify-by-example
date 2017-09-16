@@ -48,12 +48,11 @@ Feature: Time of day formatted as spoken words
 Adding in a test runner is next.  We are using Cucumber for Java and JUnit for our code, as below (not shown are the Maven pom.xml dependency management pieces)
 
 ```java
-package test.com.solutionsiq.timeofday;
+package test.com.solutionsiq;
 
-import org.junit.runner.RunWith;
-
-import cucumber.api.junit.Cucumber;
 import cucumber.api.CucumberOptions;
+import cucumber.api.junit.Cucumber;
+import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 
@@ -62,12 +61,12 @@ import cucumber.api.CucumberOptions;
 //      strict = true,
 //      tags     = "",
         monochrome = false,
-        features = { "src/test/java/test/com/solutionsiq/timeofday/" },
-        glue     = { "test.com.solutionsiq.timeofday" },
+        features = { "src/test/java/test/com/solutionsiq/" },
+        glue     = { "test.com.solutionsiq" },
         plugin   = { "pretty", "html:target/cucumber-reports/cucumber-html-report", "json:target/cucumber-reports/cucumber-json-report.json" }
 )
 
-public class TimeOfDayServiceTestRunner {
+public class _CucumberTestRunner {
 }
 ```
 
@@ -113,3 +112,5 @@ public class TimeOfDayServiceTestStepdefs {
 ```
 
 Don't forget to look at the pretty cucumber reports located at target/cucumber-pretty-reports/cucumber-html-reports/overview-features.html and target/cucumber-pretty-reports/cucumber-html-reports/overview-steps.html!
+
+I've also added some things that show a somewhat more comprehensive example of how unit tests and acceptance tests work together.  These are the "CreditCard" related classes and tests.

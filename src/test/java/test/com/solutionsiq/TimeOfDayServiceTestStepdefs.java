@@ -1,4 +1,4 @@
-package test.com.solutionsiq.timeofday;
+package test.com.solutionsiq;
 
 import com.solutionsiq.timeofday.*;
 import cucumber.api.java.en.When;
