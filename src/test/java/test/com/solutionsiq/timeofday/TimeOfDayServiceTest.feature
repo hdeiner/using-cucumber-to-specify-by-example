@@ -1,6 +1,6 @@
 Feature: Time of day formatted as spoken words
 
-  Scenario Outline: Check Spoken Formatted
+  Scenario Outline: Check Spoken Formatted (as I check in, the CI server should work)
 
     When the hour is "<hour>"
     And the minute is "<minute>"
